@@ -1,12 +1,13 @@
-import React from 'react'
-import TsxArraySample from './tsxSample/TsxArraySample'
-import TsxObjectArraySample from './tsxSample/TsxObjectArraySample'
-import TsxObjectArraySample2 from './tsxSample/TsxObjectArraySample2'
+import Button from "./propsSample/Button"
+import ProductDetail from "./propsSample/ProductDetail"
 
 function App() {
 
   return (<>
-    <TsxObjectArraySample2></TsxObjectArraySample2>
+    <Button title='Hello My Button' />
+    <ProductDetail name='IPhone' unitPrice={2500} unitsInStock={15} points={[4, 10, 10]} />
+    <hr></hr>
+    <ProductDetail name='Samsung' unitPrice={1100} unitsInStock={315} points={[9, 5, 10]} />
   </>)
 }
 
