@@ -1,10 +1,9 @@
-import StateArraySample2 from "./state/StateArraySample2"
-
+import StateInputAndArraySample from "./state/StateInputAndArraySample"
 
 function App() {
 
   return (<>
-    <StateArraySample2/>
+    <StateInputAndArraySample/>
   </>)
 }
 
