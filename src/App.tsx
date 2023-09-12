@@ -1,10 +1,10 @@
-import StateSample4 from "./state/StateSample4"
-import StateSample5 from "./state/StateSample5"
+import StateFavSample from "./state/StateFavSample"
+
 
 function App() {
 
   return (<>
-    <StateSample5/>
+    <StateFavSample/>
   </>)
 }
 
