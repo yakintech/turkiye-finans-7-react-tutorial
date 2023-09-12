@@ -2,7 +2,7 @@ import React from 'react'
 
 function ProductList(props: any) {
 
-    var { productList, deleteProduct } = props
+    var { productList, deleteProduct, sortByName } = props
 
 
 
@@ -11,7 +11,7 @@ function ProductList(props: any) {
             <thead>
                 <tr>
                     <th>Id</th>
-                    <th>Product Name</th>
+                    <th style={{cursor:'pointer'}} onClick={() => sortByName()}>Product Name</th>
                     <th>Product Price</th>
                     <th>Stock</th>
                     <th>Delete</th>
