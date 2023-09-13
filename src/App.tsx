@@ -1,12 +1,10 @@
-import ProductPage from "./state/ProductPage"
-import StateFavSample from "./state/StateFavSample"
-import StateWithModels from "./state/StateWithModels"
-
+import GetSample2 from "./apiOperations/GetSample2"
+import PostSample from "./apiOperations/PostSample"
 
 function App() {
 
   return (<>
-    <StateWithModels/>
+    <PostSample/>
   </>)
 }
 
