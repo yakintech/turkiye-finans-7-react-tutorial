@@ -1,11 +1,12 @@
 import { Link, Route, Routes } from "react-router-dom"
-import About from "./routes/About"
-import Blog from "./routes/Blog"
-import Contact from "./routes/Contact"
-import CustomerDetail from "./routes/CustomerDetail"
-import Customers from "./routes/Customers"
-import Home from "./routes/Home"
-import NotFound from "./routes/NotFound"
+import About from "./routeSample/About"
+import Blog from "./routeSample/Blog"
+import Contact from "./routeSample/Contact"
+import CustomerDetail from "./routeSample/CustomerDetail"
+import Customers from "./routeSample/Customers"
+import Home from "./routeSample/Home"
+import NotFound from "./routeSample/NotFound"
+import SupplierPage from "./apiOperations/SupplierPage"
 
 
 
@@ -18,6 +19,8 @@ function App() {
         <li><Link to='/blog'>Blog</Link></li>
         <li><Link to='/contact'>Contact</Link></li>
         <li><Link to='/customers'>Customers</Link></li>
+        <li><Link to='/suppliers'>Suppliers</Link></li>
+
 
       </ul>
 
@@ -26,6 +29,7 @@ function App() {
         <Route path="/about" element={<About/>} />
         <Route path="/blog" element={<Blog/>} />
         <Route path="/contact" element={<Contact/>} />
+        <Route path="/suppliers" element={<SupplierPage/>} />
         <Route path="/customers" element={<Customers/>}/>
         <Route path="/customers/:id" element={<CustomerDetail/>} />
         <Route path="*" element={<NotFound/>} />
