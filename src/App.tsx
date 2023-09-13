@@ -7,6 +7,7 @@ import Customers from "./routeSample/Customers"
 import Home from "./routeSample/Home"
 import NotFound from "./routeSample/NotFound"
 import SupplierPage from "./apiOperations/SupplierPage"
+import StorageSample from "./storage/StorageSample"
 
 
 
@@ -20,6 +21,7 @@ function App() {
         <li><Link to='/contact'>Contact</Link></li>
         <li><Link to='/customers'>Customers</Link></li>
         <li><Link to='/suppliers'>Suppliers</Link></li>
+        <li><Link to='/storagesample'>Storage Sample</Link></li>
 
 
       </ul>
@@ -32,6 +34,8 @@ function App() {
         <Route path="/suppliers" element={<SupplierPage/>} />
         <Route path="/customers" element={<Customers/>}/>
         <Route path="/customers/:id" element={<CustomerDetail/>} />
+        <Route path="/storagesample" element={<StorageSample/>} />
+
         <Route path="*" element={<NotFound/>} />
 
       </Routes>
