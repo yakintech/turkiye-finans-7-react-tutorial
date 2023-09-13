@@ -18,7 +18,6 @@ function PostSample() {
         axios.post("https://northwind.vercel.app/api/suppliers", newSupplier)
             .then(res => {
                 console.log('RES', res);
-                
                 alert('Success!!')
             })
 
