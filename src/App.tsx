@@ -8,6 +8,7 @@ import Home from "./routeSample/Home"
 import NotFound from "./routeSample/NotFound"
 import SupplierPage from "./apiOperations/SupplierPage"
 import StorageSample from "./storage/StorageSample"
+import MUIIntro from "./mui/MUIIntro"
 
 
 
@@ -22,6 +23,7 @@ function App() {
         <li><Link to='/customers'>Customers</Link></li>
         <li><Link to='/suppliers'>Suppliers</Link></li>
         <li><Link to='/storagesample'>Storage Sample</Link></li>
+        <li><Link to='/muiintro'>MUI Intro</Link></li>
 
 
       </ul>
@@ -35,6 +37,8 @@ function App() {
         <Route path="/customers" element={<Customers/>}/>
         <Route path="/customers/:id" element={<CustomerDetail/>} />
         <Route path="/storagesample" element={<StorageSample/>} />
+        <Route path="/muiintro" element={<MUIIntro/>} />
+
 
         <Route path="*" element={<NotFound/>} />
 
