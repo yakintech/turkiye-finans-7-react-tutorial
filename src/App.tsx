@@ -9,6 +9,9 @@ import NotFound from "./routeSample/NotFound"
 import SupplierPage from "./apiOperations/SupplierPage"
 import StorageSample from "./storage/StorageSample"
 import MUIIntro from "./mui/MUIIntro"
+import MUIGridSample from "./mui/MUIGridSample"
+import DataGridSample from "./mui/DataGridSample"
+import OrderDetail from "./mui/OrderDetail"
 
 
 
@@ -24,6 +27,9 @@ function App() {
         <li><Link to='/suppliers'>Suppliers</Link></li>
         <li><Link to='/storagesample'>Storage Sample</Link></li>
         <li><Link to='/muiintro'>MUI Intro</Link></li>
+        <li><Link to='/muigrid'>Grid Sample</Link></li>
+        <li><Link to='/datagrid'>Data Grid</Link></li>
+
 
 
       </ul>
@@ -38,6 +44,12 @@ function App() {
         <Route path="/customers/:id" element={<CustomerDetail/>} />
         <Route path="/storagesample" element={<StorageSample/>} />
         <Route path="/muiintro" element={<MUIIntro/>} />
+        <Route path="/muigrid" element={<MUIGridSample/>} />
+        <Route path="/datagrid" element={<DataGridSample/>} />
+        <Route path="/orders/:id" element={<OrderDetail/>} />
+
+
+
 
 
         <Route path="*" element={<NotFound/>} />
