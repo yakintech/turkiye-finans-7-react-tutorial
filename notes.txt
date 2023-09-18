@@ -1,7 +1,5 @@
-styled-components
 popup üzerinden grid örneği ( Mustafa Bey)
-routes map
 grid static deper
-login operation
+useEffect mutli dependency
 
 
