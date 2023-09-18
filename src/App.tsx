@@ -19,6 +19,8 @@ import { CounterContext, CounterContextType } from "./contextSample/CounterConte
 import ProductsPage from "./contextSample/ProductsPage"
 import Favorites from "./contextSample/Favorites"
 import { FavoritesContext, FavoritesContextType } from "./contextSample/FavoritesContext"
+import ParentComp from "./otherHooks/ParentComp"
+import RefHookSample from "./otherHooks/RefHookSample"
 
 
 
@@ -28,6 +30,10 @@ function App() {
 
   const { counter } = useContext(CounterContext) as CounterContextType;
   const { favorites } =  useContext(FavoritesContext) as FavoritesContextType
+
+
+  return <RefHookSample/>
+
 
   return (<>
     <ul style={{ display: 'flex', justifyContent: 'space-between' }}>
