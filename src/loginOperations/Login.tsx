@@ -1,5 +1,7 @@
 import axios from 'axios';
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import { useNavigate } from 'react-router-dom';
+import { LoginContext, LoginContextType } from './LoginContext';
 
 function Login() {
 
@@ -7,12 +9,17 @@ function Login() {
     const [password, setpassword] = useState('');
     const [loading, setloading] = useState(false)
 
+    const { setisLogin } = useContext(LoginContext) as LoginContextType
+
     const login = () => {
+
         setloading(true)
         axios.post('http://localhost:3001/token', { email, password })
             .then(res => {
                 localStorage.setItem('token', res.data?.token)
                 setloading(false)
+
+                setisLogin(true)
 
             })
             .catch(err => {
