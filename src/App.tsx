@@ -21,6 +21,7 @@ import Favorites from "./contextSample/Favorites"
 import { FavoritesContext, FavoritesContextType } from "./contextSample/FavoritesContext"
 import ParentComp from "./otherHooks/ParentComp"
 import RefHookSample from "./otherHooks/RefHookSample"
+import StyleComp from "./styleComp/StyleComp"
 
 
 
@@ -32,7 +33,7 @@ function App() {
   const { favorites } =  useContext(FavoritesContext) as FavoritesContextType
 
 
-  return <RefHookSample/>
+  return <StyleComp/>
 
 
   return (<>
